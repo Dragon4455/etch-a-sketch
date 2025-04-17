@@ -1,0 +1,21 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+#container{
+    box-sizing: content-box;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    border: 5px black solid;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+.grid_item{
+    flex-basis: calc(6.25%);
+
+    height:auto;
+    border: 1px black solid;
+    
+}
