@@ -1,7 +1,10 @@
 *, *::after, *::before{
     box-sizing: border-box;
 }
-
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(224, 255, 252);
+}
 #container{
     box-sizing: content-box;
     width: 700px;
@@ -9,13 +12,37 @@
     margin: 0 auto;
     border: 5px black solid;
     display: flex;
-    
+    background-color: white;
     flex-wrap: wrap;
 }
 .grid_item{
-    flex-basis: calc(6.25%);
-
-    height:auto;
-    border: 1px black solid;
+    /* flex-basis: calc(6.25%); */
     
+    height:auto;
+    border: 1px rgb(71, 71, 71) solid;
+    
+}
+.header{
+    font-weight: bold;
+    background-color: #09f;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.button_container{
+    width: 50%;
+    margin: 40px auto;
+    
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #09f;
+    padding: 15px 25px;
+    color: white;
+    text-align: center;
 }
